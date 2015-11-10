@@ -6,7 +6,7 @@ import java.awt.event.ActionListener;
 public class MainClass {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
 		final JFrame frame = new JFrame();
         frame.setSize(600, 600);
 
@@ -41,7 +41,7 @@ public class MainClass {
         button_stock.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                System.out.print("Inside Stock");
+                Stock.main(null);
             }
         });
 
