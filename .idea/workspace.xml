@@ -2,35 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71bd2379-d476-4701-b5ce-1f9fe3ea8a71" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AutoSuggest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Final.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Stock.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_36_bin.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test2.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SH1D/AutoSuggestor$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SH1D/AutoSuggestor$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SH1D/AutoSuggestor$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SH1D/AutoSuggestor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SH1D/SuggestionLabel$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SH1D/SuggestionLabel$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SH1D/SuggestionLabel.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SH1D/Test$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SH1D/Test$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SH1D/Test.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Test.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SH1D/MainClass$1.class" afterPath="$PROJECT_DIR$/out/production/SH1D/MainClass$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SH1D/MainClass$2.class" afterPath="$PROJECT_DIR$/out/production/SH1D/MainClass$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SH1D/MainClass$3.class" afterPath="$PROJECT_DIR$/out/production/SH1D/MainClass$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SH1D/Purchase$1.class" afterPath="$PROJECT_DIR$/out/production/SH1D/Purchase$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SH1D/Purchase$2.class" afterPath="$PROJECT_DIR$/out/production/SH1D/Purchase$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SH1D/Purchase$3.class" afterPath="$PROJECT_DIR$/out/production/SH1D/Purchase$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SH1D/Purchase.class" afterPath="$PROJECT_DIR$/out/production/SH1D/Purchase.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SH1D/Sales.class" afterPath="$PROJECT_DIR$/out/production/SH1D/Sales.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MainClass.java" afterPath="$PROJECT_DIR$/src/MainClass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Purchase.java" afterPath="$PROJECT_DIR$/src/Purchase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SH1D.iml" afterPath="$PROJECT_DIR$/SH1D.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Sales.java" afterPath="$PROJECT_DIR$/src/Sales.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SH1D.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,21 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainClass.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MainClass.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Purchase.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Purchase.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Purchase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.72">
-              <caret line="116" column="31" selection-start-line="116" selection-start-column="31" selection-end-line="116" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="119" column="24" selection-start-line="119" selection-start-column="24" selection-end-line="119" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#244#252#0" expanded="true" />
@@ -92,6 +54,36 @@
                 <element signature="method#main#0;class#Final#0" expanded="false" />
                 <element signature="class#698:2013" expanded="false" />
                 <element signature="method#keyTyped#0;class#698:2013" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sales.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Sales.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="2.1085715">
+              <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1344#1513#0" expanded="true" />
+                <element signature="e#1512#1513#0" expanded="true" />
+                <element signature="e#1641#1916#0" expanded="true" />
+                <element signature="e#1915#1916#0" expanded="true" />
+                <element signature="e#2050#2463#0" expanded="true" />
+                <element signature="e#2462#2463#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Stock.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Stock.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+              <folding>
+                <element signature="class#1507:1639" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -134,7 +126,6 @@
         <option value="$PROJECT_DIR$/src/Buttons.java" />
         <option value="$PROJECT_DIR$/src/temp" />
         <option value="$PROJECT_DIR$/src/Test.java" />
-        <option value="$PROJECT_DIR$/src/Sales.java" />
         <option value="$PROJECT_DIR$/src/Stock.java" />
         <option value="$PROJECT_DIR$/src/Autocomplete.java" />
         <option value="$PROJECT_DIR$/src/test2.java" />
@@ -144,6 +135,7 @@
         <option value="$PROJECT_DIR$/src/Final.java" />
         <option value="$PROJECT_DIR$/src/AutoSuggest.java" />
         <option value="$PROJECT_DIR$/src/Purchase.java" />
+        <option value="$PROJECT_DIR$/src/Sales.java" />
       </list>
     </option>
   </component>
@@ -233,7 +225,7 @@
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
   </component>
-  <component name="RunManager" selected="Application.Purchase">
+  <component name="RunManager" selected="Application.Sales">
     <configuration default="false" name="Purchase" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="Purchase" />
@@ -264,9 +256,9 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="TestButton" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="MainClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="TestButton" />
+      <option name="MAIN_CLASS_NAME" value="MainClass" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -279,9 +271,9 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="Temp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Sales" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="Temp" />
+      <option name="MAIN_CLASS_NAME" value="Sales" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -294,9 +286,9 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="Final" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Stock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="Final" />
+      <option name="MAIN_CLASS_NAME" value="Stock" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -460,17 +452,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.Purchase" />
       <item index="1" class="java.lang.String" itemvalue="Application.AutoSuggest" />
-      <item index="2" class="java.lang.String" itemvalue="Application.TestButton" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Temp" />
-      <item index="4" class="java.lang.String" itemvalue="Application.Final" />
+      <item index="2" class="java.lang.String" itemvalue="Application.MainClass" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Sales" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Stock" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Purchase" />
-        <item index="1" class="java.lang.String" itemvalue="Application.AutoSuggest" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Final" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Temp" />
-        <item index="4" class="java.lang.String" itemvalue="Application.TestButton" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Sales" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Purchase" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Stock" />
+        <item index="3" class="java.lang.String" itemvalue="Application.MainClass" />
+        <item index="4" class="java.lang.String" itemvalue="Application.AutoSuggest" />
       </list>
     </recent_temporary>
   </component>
@@ -502,7 +494,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275563" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32582322" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -643,9 +635,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="85" column="49" selection-start-line="85" selection-start-column="49" selection-end-line="85" selection-end-column="49" />
-          <folding>
-            <element signature="class#2023:2122" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -706,9 +696,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="85" column="49" selection-start-line="85" selection-start-column="49" selection-end-line="85" selection-end-column="49" />
-          <folding>
-            <element signature="class#2023:2122" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -769,9 +757,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="85" column="49" selection-start-line="85" selection-start-column="49" selection-end-line="85" selection-end-column="49" />
-          <folding>
-            <element signature="class#2023:2122" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -822,9 +808,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-          <folding>
-            <element signature="class#2023:2122" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1009,16 +993,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Stock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
-          <folding>
-            <element signature="class#1507:1639" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.9409836">
@@ -1026,21 +1000,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Sales.java">
+    <entry file="file://$PROJECT_DIR$/src/AutoSuggest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.195">
-          <caret line="85" column="49" selection-start-line="85" selection-start-column="49" selection-end-line="85" selection-end-column="49" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="49" column="67" selection-start-line="49" selection-start-column="67" selection-end-line="49" selection-end-column="67" />
           <folding>
-            <element signature="class#2023:2122" expanded="false" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding>
+            <element signature="class#1507:1639" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MainClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.30857143">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Purchase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="119" column="24" selection-start-line="119" selection-start-column="24" selection-end-line="119" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#244#252#0" expanded="true" />
+            <element signature="e#2727#2896#0" expanded="true" />
+            <element signature="e#2895#2896#0" expanded="true" />
+            <element signature="e#3049#3465#0" expanded="true" />
+            <element signature="e#3464#3465#0" expanded="true" />
+            <element signature="e#3623#5216#0" expanded="true" />
+            <element signature="e#5215#5216#0" expanded="true" />
+            <element signature="e#5357#5429#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1057,30 +1059,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AutoSuggest.java">
+    <entry file="file://$PROJECT_DIR$/src/Sales.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="49" column="67" selection-start-line="49" selection-start-column="67" selection-end-line="49" selection-end-column="67" />
+        <state vertical-scroll-proportion="2.1085715">
+          <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Purchase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.72">
-          <caret line="116" column="31" selection-start-line="116" selection-start-column="31" selection-end-line="116" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#244#252#0" expanded="true" />
-            <element signature="e#2727#2896#0" expanded="true" />
-            <element signature="e#2895#2896#0" expanded="true" />
-            <element signature="e#3049#3465#0" expanded="true" />
-            <element signature="e#3464#3465#0" expanded="true" />
-            <element signature="e#3623#5216#0" expanded="true" />
-            <element signature="e#5215#5216#0" expanded="true" />
-            <element signature="e#5357#5429#0" expanded="false" />
+            <element signature="e#1344#1513#0" expanded="true" />
+            <element signature="e#1512#1513#0" expanded="true" />
+            <element signature="e#1641#1916#0" expanded="true" />
+            <element signature="e#1915#1916#0" expanded="true" />
+            <element signature="e#2050#2463#0" expanded="true" />
+            <element signature="e#2462#2463#0" expanded="true" />
           </folding>
         </state>
       </provider>
