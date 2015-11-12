@@ -71,8 +71,6 @@ public class Sales {
 
                 textField_name.setText(null);
                 textField_qty.setText(null);
-
-
             }
         });
 

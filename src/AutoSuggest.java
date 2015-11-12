@@ -12,10 +12,10 @@ public class AutoSuggest {
     private final JComboBox combo = new JComboBox();
     private final Vector<String> v = new Vector<>();
     public AutoSuggest() {
-//        super(new BorderLayout());
+
         combo.setEditable(true);
         tf = (JTextField) combo.getEditor().getEditorComponent();
-        tf.setBounds(5,5,100,25);
+
         tf.addKeyListener(new KeyAdapter() {
             public void keyTyped(KeyEvent e) {
                 EventQueue.invokeLater(new Runnable() {
@@ -48,6 +48,7 @@ public class AutoSuggest {
                         v.addElement(text);
                         Collections.sort(v);
                         setModel(getSuggestedModel(v, text), text);
+                        System.out.println(text);
                     }
                     hide_flag = true;
                 }else if(code==KeyEvent.VK_ESCAPE) {
@@ -64,19 +65,8 @@ public class AutoSuggest {
                 }
             }
         });
-//        String[] countries = {"Afghanistan", "Albania", "Algeria", "Andorra", "Angola","Argentina"
-//                ,"Armenia","Austria","Bahamas","Bahrain", "Bangladesh","Barbados", "Belarus","Belgium",
-//                "Benin","Bhutan","Bolivia","Bosnia & Herzegovina","Botswana","Brazil","Bulgaria",
-//                "Burkina Faso","Burma","Burundi","Cambodia","Cameroon","Canada", "China","Colombia",
-//                "Comoros","Congo","Croatia","Cuba","Cyprus","Czech Republic","Denmark", "Georgia",
-//                "Germany","Ghana","Great Britain","Greece","Hungary","Holland","India","Iran","Iraq",
-//                "Italy","Somalia", "Spain", "Sri Lanka", "Sudan","Suriname", "Swaziland","Sweden",
-//                "Switzerland", "Syria","Uganda","Ukraine","United Arab Emirates","United Kingdom",
-//                "United States","Uruguay","Uzbekistan","Vanuatu","Venezuela","Vietnam",
-//                "Yemen","Zaire","Zambia","Zimbabwe"};
-//        for(int i=0;i<countries.length;i++){
-//            v.addElement(countries[i]);
-//        }
+
+
         try {
             Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/stock", "admin", "password");
 
@@ -96,15 +86,10 @@ public class AutoSuggest {
         setModel(new DefaultComboBoxModel(v), "");
 //        JPanel p = new JPanel(new BorderLayout());
         JFrame jFrame = new JFrame();
-        jFrame.setSize(300, 300);
+        jFrame.setSize(600, 600);
 
-        combo.setBounds(50,10,100,25);
-//        tf.setBounds(50, 5, 100, 25);
-//        p.setBorder(BorderFactory.createTitledBorder("AutoSuggestion Box"));
-//        p.add(combo, BorderLayout.NORTH);
-//        add(p);
-//        setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));
-//        setPreferredSize(new Dimension(300, 150));
+        combo.setBounds(50,50,100,25);
+
         jFrame.add(combo);
         JLabel label = new JLabel(" ");
         jFrame.add(label);
@@ -118,7 +103,6 @@ public class AutoSuggest {
         combo.setModel(mdl);
         combo.setSelectedIndex(-1);
         tf.setText(str);
-        System.out.println("Inside setModel");
 
     }
     private static DefaultComboBoxModel getSuggestedModel(java.util.List<String> list, String text) {
@@ -130,13 +114,7 @@ public class AutoSuggest {
         return m;
     }
     public static void main(String[] args) {
-//        JFrame frame = new JFrame();
-//        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-////        frame.getContentPane().add(new AutoSuggest());
-//        frame.pack();
-//        System.out.println("Inside Main");
-//        frame.setLocationRelativeTo(null);
-//        frame.setVisible(true);
+
         AutoSuggest autoSuggest = new AutoSuggest();
     }
 }
