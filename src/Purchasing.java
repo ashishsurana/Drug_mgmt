@@ -5,13 +5,17 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.sql.*;
-import java.util.Collections;
-import java.util.Vector;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 /**
  * Created by ashish on 12/11/15.
  */
 public class Purchasing {
+    String tempname = new String("");
+    String tempparty = new String("");
     JLabel label_name = new JLabel("Medicine");
 
     JLabel label_bno = new JLabel("Batch No.");
@@ -25,7 +29,7 @@ public class Purchasing {
     JLabel label_billdate = new JLabel("Bill Date");
     final JTextField textField_billdate = new JTextField();
     JLabel label_expdate = new JLabel("Expiry Date");
-    final JTextField textField_expdate = new JTextField();
+    final JTextField textField_expdate = new JTextField("dd-MM-yyyy");
 
     private JTextField textField_name;
 
@@ -34,6 +38,7 @@ public class Purchasing {
     private JTextField textField_party;
     private final JComboBox jComboBox_party = new JComboBox();
     private final Vector<String> vector_party = new Vector<>();
+    //------------------------------------------------CONSTRUCTOR----------------------
     public void Purchasing(){
         final JFrame jFrame = new JFrame();
         jFrame.setSize(600, 600);
@@ -82,7 +87,7 @@ public class Purchasing {
                 textField_name.setText(null);
                 textField_bno.setText(null);
                 textField_qty.setText(null);
-//                textField_party.setText(null);
+                textField_party.setText(null);
                 textField_billdate.setText(null);
                 textField_billno.setText(null);
             }
@@ -97,6 +102,14 @@ public class Purchasing {
                 String url = new String("jdbc:mysql://127.0.0.1:3306/stock");
                 String user = new String("admin");
                 String pass = new String("password");
+                /*java.util.Date date = null;
+                SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
+                try {
+                    date=dateFormat.parse(textField_expdate.getText());
+                }
+                catch (ParseException e){
+                    e.printStackTrace();
+                }*/
                 try {
                     Connection con = DriverManager.getConnection(url, user, pass);
                     PreparedStatement preparedStatement = con.prepareStatement("insert into stock.purchase values(?,?,?,?,?,?)");
@@ -104,21 +117,24 @@ public class Purchasing {
                     preparedStatement.setString(2, textField_bno.getText());
                     preparedStatement.setInt(3, Integer.parseInt(textField_qty.getText()));
                     preparedStatement.setString(4, textField_party.getText());
-
-                    preparedStatement.setInt(5, Integer.parseInt(textField_billno.getText()));
-                    preparedStatement.setString(6, textField_billno.getText());
+                    preparedStatement.setString(5, textField_billdate.getText());
+                    preparedStatement.setInt(6, Integer.parseInt(textField_billno.getText()));
                     preparedStatement.executeUpdate();
-
                     con.close();
                 } catch (SQLException e) {
                     e.printStackTrace();
+                    System.out.println(e.getErrorCode());
+//                    if (e.getErrorCode()==1366){
+//                        JOptionPane.showMessageDialog(null, "Response Failed! Check the datails again");
+//                    }
+
                 }
                 textField_name.setText(null);
                 textField_bno.setText(null);
                 textField_qty.setText(null);
-                textField_party.setText(null);
-                textField_billdate.setText(null);
-                textField_billno.setText(null);
+                textField_party.setText(textField_party.getText());
+                textField_billdate.setText(textField_billdate.getText());
+                textField_billno.setText(textField_billno.getText());
                 textField_expdate.setText(null);
 
             }
@@ -135,7 +151,6 @@ public class Purchasing {
             while (resultSet.next()){
                 vector_name.addElement(resultSet.getString("name"));
             }
-
         }
         catch (SQLException e){
             e.printStackTrace();
@@ -149,17 +164,17 @@ public class Purchasing {
                         if (text.length() == 0) {
                             jComboBox_name.hidePopup();
                             setModel(new DefaultComboBoxModel(vector_name), null,"name");
-                            System.out.println("Inside the length 0 case");
+//                            System.out.println("Inside the length 0 case");
                         } else {
                             DefaultComboBoxModel m = getSuggestedModel(vector_name, text);
                             if (m.getSize() == 0 || hide_flag) {
                                 jComboBox_name.hidePopup();
                                 hide_flag = false;
-                                System.out.println("Inside the length not 0 case");
+//                                System.out.println("Inside the length not 0 case");
                             } else {
                                 setModel(m, text,"name");
                                 jComboBox_name.showPopup();
-                                System.out.println("Inside the !length showpopup case");
+//                                System.out.println("Inside the !length showpopup case");
                             }
                         }
                     }
@@ -277,9 +292,6 @@ public class Purchasing {
         jFrame.setVisible(true);
         jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         jFrame.setLayout(null);
-
-
-
 
     }
     private boolean hide_flag = false;

@@ -27,7 +27,7 @@ public class MainClass {
         button_purchase.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                Purchase.main(null);
+                Purchasing.main(null);
             }
         });
 
