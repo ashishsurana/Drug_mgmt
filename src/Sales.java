@@ -1,9 +1,11 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.datatransfer.StringSelection;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+import java.awt.geom.Ellipse2D;
 import java.sql.*;
 import java.util.Collections;
 import java.util.Vector;
@@ -26,6 +28,9 @@ public class Sales {
     JTextField textField_drname;
     final JComboBox jComboBox_drname = new JComboBox();
     final Vector<String> vector_drname = new Vector<>();
+    Integer remaining_qty;
+
+    String temp_name;// = new String();
 	public Sales() {
 
 		final JFrame jFrame = new JFrame();
@@ -47,9 +52,12 @@ public class Sales {
 		JLabel label_qty = new JLabel("Quantity  ");
 		label_qty.setBounds(100,180,200,25);
 		jFrame.add(label_qty);
-		final JTextField textField_qty;// = new JTextField();
-//		textField_qty.setBounds(250, 180, 200, 25);
-//		jFrame.add(textField_qty);
+		final JTextField textField_qty= new JTextField();
+		textField_qty.setBounds(250, 180, 100, 25);
+		jFrame.add(textField_qty);
+		final JLabel label_qtysuggest = new JLabel();
+		label_qtysuggest.setBounds(370, 180, 200, 25);
+		jFrame.add(label_qtysuggest);
 		JLabel label_billno = new JLabel("BIll No.  ");
 		label_billno.setBounds(100,220,200,25);
 		jFrame.add(label_billno);
@@ -97,7 +105,8 @@ public class Sales {
 			public void actionPerformed(ActionEvent actionEvent) {
 				textField_name.setText(null);
 				textField_bno.setText(null);
-//				textField_qty.setText(null);
+				textField_qty.setText(null);
+                label_qtysuggest.setText(null);
                 textField_billno.setText(null);
                 textField_drname.setText(null);
                 textField_pname.setText(null);
@@ -119,29 +128,33 @@ public class Sales {
 					PreparedStatement preparedStatement = con.prepareStatement("insert into stock.sales values(?,?,?,?,?,?,?)");
 					preparedStatement.setString(1, String.valueOf(textField_name.getText()));
                     preparedStatement.setString(2, textField_bno.getText());
-//					preparedStatement.setInt(3, Integer.parseInt(textField_qty.getText()));
 					preparedStatement.setInt(3, Integer.parseInt(textField_billno.getText()));
 					preparedStatement.setInt(4, Integer.parseInt(textField_billno.getText()));
-					preparedStatement.setString(5, textField_pname.getText());
-					preparedStatement.setString(6, textField_drname.getText());
+					preparedStatement.setString(5, textField_drname.getText());
+					preparedStatement.setString(6, textField_pname.getText());
 					preparedStatement.setString(7, textField_date.getText());
 					preparedStatement.executeUpdate();
+//					System.out.println("Value in Boolean = "+preparedStatement.execut);
 
+//---------------------------------------------Updating Quantity----------------------------------------
+					PreparedStatement preparedStatement1 = con.prepareStatement("update purchase set qty = ? where name = ? and bno = ?");
+
+                    preparedStatement1.setInt(1,remaining_qty);
+                    preparedStatement1.setString(2, textField_name.getText());
+                    preparedStatement1.setString(3, textField_bno.getText());
+                    preparedStatement1.executeUpdate();
 					con.close();
 				} catch (SQLException e) {
 					e.printStackTrace();
-					System.out.println(e.getErrorCode());
-//                    if (e.getErrorCode()==1366){
-//                        JOptionPane.showMessageDialog(null, "Response Failed! Check the datails again");
-//                    }
 				}
-                textField_name.setText(null);
-                textField_bno.setText(null);
-//				textField_qty.setText(null);
-                textField_billno.setText(textField_billno.getText());
-                textField_drname.setText(textField_drname.getText());
-                textField_pname.setText(textField_pname.getText());
-                textField_date.setText(textField_date.getText());
+				textField_name.setText(null);
+				textField_bno.setText(null);
+				textField_qty.setText(null);
+				textField_billno.setText(textField_billno.getText());
+				textField_drname.setText(textField_drname.getText());
+				textField_pname.setText(textField_pname.getText());
+				textField_date.setText(textField_date.getText());
+                label_qtysuggest.setText(null);
 
 			}
 		});
@@ -154,23 +167,19 @@ public class Sales {
 		try {
 			Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/stock", "admin", "password");
 			java.sql.Statement statement = con.createStatement();
-			ResultSet resultSet = statement.executeQuery("select * from purchase");
+			ResultSet resultSet = statement.executeQuery("select name from purchase");
 			while (resultSet.next()){
 				vector_name.addElement(resultSet.getString("name"));
 			}
-
 		}
 		catch (SQLException e2){
 			e2.printStackTrace();
 		}
-
 		jComboBox_name.setEditable(true);
 		textField_name = (JTextField) jComboBox_name.getEditor().getEditorComponent();
 		textField_name.addKeyListener(new KeyAdapter() {
-
 			@Override
 			public void keyTyped(KeyEvent e) {
-
 				EventQueue.invokeLater(new Runnable() {
 					@Override
 					public void run() {
@@ -186,9 +195,8 @@ public class Sales {
 								hide_flag = false;
 //                                System.out.println("Inside the length not 0 case");
 							} else {
-								setModel(m, string,"name");
+								setModel(m, string, "name");
 								jComboBox_name.showPopup();
-//                                System.out.println("Inside the !length showpopup case");
 							}
 						}
 					}
@@ -199,12 +207,26 @@ public class Sales {
 			public void keyPressed(KeyEvent e) {
 				String text = textField_name.getText();
 				int code = e.getKeyCode();
-				if (code == KeyEvent.VK_ENTER) {
+				if (code == KeyEvent.VK_ENTER || code == KeyEvent.VK_TAB) {
+					try {
+						Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/stock", "admin", "password");
+						PreparedStatement preparedStatement = con.prepareStatement("select bno from purchase where name = ?");
+						preparedStatement.setString(1, text);
+						ResultSet resultSet = preparedStatement.executeQuery();
+						while (resultSet.next()){
+							vector_bno.addElement(resultSet.getString("bno"));
+						}
+						con.close();
+					}
+					catch (SQLException e2){
+						e2.printStackTrace();
+					}
+//----------------------------------------------------------------------------------------------
+
+//----------------------------------------------------------------------------------------------
 					if (!vector_name.contains(text)) {
-						vector_name.addElement(text);
-						Collections.sort(vector_name);
-						setModel(getSuggestedModel(vector_name, text), text,"name");
-						System.out.println(text);
+						JOptionPane.showMessageDialog(null,"Stock Unavailable");
+						textField_name.setText(null);
 					}
 					hide_flag = true;
 				} else if (code == KeyEvent.VK_ESCAPE) {
@@ -228,19 +250,7 @@ public class Sales {
 //------------------------------------------------------------------------------------
 //                                       Auto Suggestion BATCHNO
 //------------------------------------------------------------------------------------
-		try {
-			Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/stock", "admin", "password");
-			java.sql.Statement statement = con.createStatement();
 
-			ResultSet resultSet = statement.executeQuery("select * from purchase ");//where name = '" + textField_name.getText() + "'");
-			while (resultSet.next()){
-				vector_bno.addElement(resultSet.getString("bno"));
-			}
-
-		}
-		catch (SQLException e2){
-			e2.printStackTrace();
-		}
 
 		jComboBox_bno.setEditable(true);
 		textField_bno = (JTextField) jComboBox_bno.getEditor().getEditorComponent();
@@ -274,11 +284,30 @@ public class Sales {
 			public void keyPressed(KeyEvent e) {
 				String text = textField_bno.getText();
 				int code = e.getKeyCode();
-				if (code == KeyEvent.VK_ENTER) {
+				if (code == KeyEvent.VK_ENTER || code == KeyEvent.VK_TAB) {
+//---------------------------------------------------for qty inside bno----------------------------------------
+					try {
+						Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/stock", "admin", "password");
+						PreparedStatement preparedStatement = con.prepareStatement("select qty from purchase where name = ? and bno = ?");
+						preparedStatement.setString(1, textField_name.getText());
+						preparedStatement.setString(2, text);
+						ResultSet resultSet = preparedStatement.executeQuery();
+
+						while (resultSet.next()){
+							label_qtysuggest.setText(resultSet.getString("qty"));// + " available in stock");
+						}
+						con.close();
+					}
+					catch (SQLException e2){
+						e2.printStackTrace();
+					}
+//-------------------------------------------------------------------------------------------
 					if (!vector_bno.contains(text)) {
-						vector_bno.addElement(text);
-						Collections.sort(vector_bno);
-						setModel(getSuggestedModel(vector_bno, text), text, "bno");
+						JOptionPane.showMessageDialog(null, "This Batch Number doesnot exists");
+						textField_bno.setText(null);
+//						vector_bno.addElement(text);
+//						Collections.sort(vector_bno);
+//						setModel(getSuggestedModel(vector_bno, text), text, "bno"
 					}
 					hide_flag2 = true;
 				} else if (code == KeyEvent.VK_ESCAPE) {
@@ -297,12 +326,27 @@ public class Sales {
 		});
 		setModel(new DefaultComboBoxModel(vector_bno), "", "bno");
 //------------------------------------------------------------------------------------
+//                                       OnClick qty
+//------------------------------------------------------------------------------------
+		textField_qty.addKeyListener(new KeyAdapter() {
+			@Override
+			public void keyPressed(KeyEvent e2) {
+				int code = e2.getKeyCode();
+				if (code == KeyEvent.VK_ENTER || code == KeyEvent.VK_TAB){
+                    remaining_qty=(Integer.parseInt(label_qtysuggest.getText()))-Integer.parseInt(textField_qty.getText());
+                    if (remaining_qty<0){
+						JOptionPane.showMessageDialog(null,"Quantity is more then existing stock");
+					}
+				}
+			}
+		});
+
+//------------------------------------------------------------------------------------
 //                                       Auto Suggestion DrName
 //------------------------------------------------------------------------------------
         try {
             Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/stock", "admin", "password");
             java.sql.Statement statement = con.createStatement();
-
             ResultSet resultSet = statement.executeQuery("select * from sales ");//where name = '" + textField_name.getText() + "'");
             while (resultSet.next()){
                 vector_drname.addElement(resultSet.getString("drname"));
