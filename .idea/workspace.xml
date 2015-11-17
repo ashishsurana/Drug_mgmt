@@ -2,37 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71bd2379-d476-4701-b5ce-1f9fe3ea8a71" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SH1D/Purchase$1$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SH1D/Purchase$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SH1D/Purchase$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SH1D/Purchase$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SH1D/Purchase$4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SH1D/Purchase.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SH1D/test2$1$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SH1D/test2$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SH1D/test2$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SH1D/test2.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SH1D/MainClass$1.class" afterPath="$PROJECT_DIR$/out/production/SH1D/MainClass$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SH1D/MainClass$2.class" afterPath="$PROJECT_DIR$/out/production/SH1D/MainClass$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SH1D/Purchasing$1.class" afterPath="$PROJECT_DIR$/out/production/SH1D/Purchasing$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SH1D/Purchasing$2.class" afterPath="$PROJECT_DIR$/out/production/SH1D/Purchasing$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SH1D/Purchasing$3.class" afterPath="$PROJECT_DIR$/out/production/SH1D/Purchasing$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SH1D/Purchasing$4$1.class" afterPath="$PROJECT_DIR$/out/production/SH1D/Purchasing$4$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SH1D/Purchasing$4.class" afterPath="$PROJECT_DIR$/out/production/SH1D/Purchasing$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SH1D/Purchasing$5$1.class" afterPath="$PROJECT_DIR$/out/production/SH1D/Purchasing$5$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SH1D/Purchasing$5.class" afterPath="$PROJECT_DIR$/out/production/SH1D/Purchasing$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SH1D/Purchasing.class" afterPath="$PROJECT_DIR$/out/production/SH1D/Purchasing.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SH1D/Sales$1.class" afterPath="$PROJECT_DIR$/out/production/SH1D/Sales$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SH1D/Sales$2.class" afterPath="$PROJECT_DIR$/out/production/SH1D/Sales$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SH1D/Sales$3.class" afterPath="$PROJECT_DIR$/out/production/SH1D/Sales$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SH1D/Sales$4.class" afterPath="$PROJECT_DIR$/out/production/SH1D/Sales$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SH1D/Sales$5$1.class" afterPath="$PROJECT_DIR$/out/production/SH1D/Sales$5$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SH1D/Sales$5.class" afterPath="$PROJECT_DIR$/out/production/SH1D/Sales$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SH1D/Sales$6.class" afterPath="$PROJECT_DIR$/out/production/SH1D/Sales$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SH1D/Sales$7$1.class" afterPath="$PROJECT_DIR$/out/production/SH1D/Sales$7$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SH1D/Sales$7.class" afterPath="$PROJECT_DIR$/out/production/SH1D/Sales$7.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SH1D/Sales.class" afterPath="$PROJECT_DIR$/out/production/SH1D/Sales.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SH1D/Stock$1.class" afterPath="$PROJECT_DIR$/out/production/SH1D/Stock$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SH1D/Stock$2.class" afterPath="$PROJECT_DIR$/out/production/SH1D/Stock$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SH1D/Stock$3.class" afterPath="$PROJECT_DIR$/out/production/SH1D/Stock$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SH1D/Stock$4.class" afterPath="$PROJECT_DIR$/out/production/SH1D/Stock$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SH1D/Stock.class" afterPath="$PROJECT_DIR$/out/production/SH1D/Stock.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Purchasing.java" afterPath="$PROJECT_DIR$/src/Purchasing.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Sales.java" afterPath="$PROJECT_DIR$/src/Sales.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Stock.java" afterPath="$PROJECT_DIR$/src/Stock.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SH1D.iws" />
@@ -59,13 +38,13 @@
         <entry file="file://$PROJECT_DIR$/src/Purchasing.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="182" column="0" selection-start-line="182" selection-start-column="0" selection-end-line="182" selection-end-column="0" />
+              <caret line="110" column="29" selection-start-line="110" selection-start-column="29" selection-end-line="110" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3895#6139#0" expanded="true" />
-                <element signature="e#6138#6139#0" expanded="true" />
-                <element signature="method#keyPressed#0;class#10474:12645" expanded="false" />
-                <element signature="method#keyTyped#0;class#10474:12645" expanded="false" />
+                <element signature="method#keyTyped#0;class#7194:9572" expanded="false" />
+                <element signature="method#keyPressed#0;class#7194:9572" expanded="false" />
+                <element signature="method#keyPressed#0;class#10673:12844" expanded="false" />
+                <element signature="method#keyTyped#0;class#10673:12844" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -75,8 +54,18 @@
         <entry file="file://$PROJECT_DIR$/src/MainClass.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-              <folding />
+              <caret line="40" column="20" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#691#865#0" expanded="false" />
+                <element signature="e#864#865#0" expanded="false" />
+                <element signature="e#908#1077#0" expanded="false" />
+                <element signature="e#1076#1077#0" expanded="false" />
+                <element signature="e#1120#1289#0" expanded="false" />
+                <element signature="e#1288#1289#0" expanded="false" />
+                <element signature="e#1324#1492#0" expanded="false" />
+                <element signature="e#1491#1492#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -84,19 +73,16 @@
       <file leaf-file-name="Sales.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Sales.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6446281">
-              <caret line="211" column="127" selection-start-line="211" selection-start-column="127" selection-end-line="211" selection-end-column="127" />
+            <state vertical-scroll-proportion="0.5244216">
+              <caret line="175" column="25" selection-start-line="175" selection-start-column="25" selection-end-line="175" selection-end-column="25" />
               <folding>
-                <element signature="e#4015#6043#0" expanded="true" />
-                <element signature="e#6042#6043#0" expanded="true" />
-                <element signature="method#keyTyped#0;class#6840:9109" expanded="false" />
-                <element signature="method#keyTyped#0;class#9568:11941" expanded="false" />
-                <element signature="e#12263#12700#0" expanded="true" />
-                <element signature="e#12699#12700#0" expanded="true" />
-                <element signature="method#keyTyped#0;class#13663:15862" expanded="false" />
-                <element signature="method#keyPressed#0;class#13663:15862" expanded="false" />
+                <element signature="e#3972#6706#0" expanded="true" />
+                <element signature="e#6705#6706#0" expanded="true" />
+                <element signature="e#13023#13501#0" expanded="true" />
+                <element signature="e#13500#13501#0" expanded="true" />
                 <element signature="method#setModel#0;class#Sales#0" expanded="false" />
-                <element signature="method#getSuggestedModel#0;class#Sales#0" expanded="false" />
+                <element signature="e#18175#18176#0" expanded="true" />
+                <element signature="e#18209#18210#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -111,6 +97,12 @@
                 <element signature="imports" expanded="false" />
                 <element signature="e#1212#1371#0" expanded="false" />
                 <element signature="e#1370#1371#0" expanded="false" />
+                <element signature="e#1529#1698#0" expanded="false" />
+                <element signature="e#1697#1698#0" expanded="false" />
+                <element signature="e#2144#2325#0" expanded="false" />
+                <element signature="e#2324#2325#0" expanded="false" />
+                <element signature="e#3411#4398#0" expanded="false" />
+                <element signature="e#4397#4398#0" expanded="false" />
                 <element signature="e#6213#6263#0" expanded="false" />
               </folding>
             </state>
@@ -150,8 +142,8 @@
         <option value="$PROJECT_DIR$/src/AutoSuggest.java" />
         <option value="$PROJECT_DIR$/src/Purchase.java" />
         <option value="$PROJECT_DIR$/src/MainClass.java" />
-        <option value="$PROJECT_DIR$/src/Purchasing.java" />
         <option value="$PROJECT_DIR$/src/Stock.java" />
+        <option value="$PROJECT_DIR$/src/Purchasing.java" />
         <option value="$PROJECT_DIR$/src/Sales.java" />
       </list>
     </option>
@@ -188,8 +180,9 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -228,7 +221,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -535,8 +527,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.346519" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1572327" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1595912" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -548,6 +539,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -600,13 +592,13 @@
     <entry file="file://$PROJECT_DIR$/src/Purchasing.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="98" column="30" selection-start-line="98" selection-start-column="30" selection-end-line="98" selection-end-column="30" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3895#6139#0" expanded="true" />
-            <element signature="e#6138#6139#0" expanded="true" />
-            <element signature="method#keyPressed#0;class#10474:12645" expanded="false" />
-            <element signature="method#keyTyped#0;class#10474:12645" expanded="false" />
+            <element signature="method#keyTyped#0;class#7194:9572" expanded="false" />
+            <element signature="method#keyPressed#0;class#7194:9572" expanded="false" />
+            <element signature="method#keyPressed#0;class#10673:12844" expanded="false" />
+            <element signature="method#keyTyped#0;class#10673:12844" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -614,26 +606,33 @@
     <entry file="file://$PROJECT_DIR$/src/MainClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
+          <caret line="40" column="20" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#691#865#0" expanded="false" />
+            <element signature="e#864#865#0" expanded="false" />
+            <element signature="e#908#1077#0" expanded="false" />
+            <element signature="e#1076#1077#0" expanded="false" />
+            <element signature="e#1120#1289#0" expanded="false" />
+            <element signature="e#1288#1289#0" expanded="false" />
+            <element signature="e#1324#1492#0" expanded="false" />
+            <element signature="e#1491#1492#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Sales.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="335" column="48" selection-start-line="335" selection-start-column="48" selection-end-line="335" selection-end-column="48" />
           <folding>
-            <element signature="e#4015#6043#0" expanded="true" />
-            <element signature="e#6042#6043#0" expanded="true" />
-            <element signature="method#keyTyped#0;class#6840:9109" expanded="false" />
-            <element signature="method#keyTyped#0;class#9568:11941" expanded="false" />
-            <element signature="e#12263#12700#0" expanded="true" />
-            <element signature="e#12699#12700#0" expanded="true" />
-            <element signature="method#keyTyped#0;class#13663:15862" expanded="false" />
-            <element signature="method#keyPressed#0;class#13663:15862" expanded="false" />
+            <element signature="e#3972#6706#0" expanded="true" />
+            <element signature="e#6705#6706#0" expanded="true" />
+            <element signature="e#13023#13501#0" expanded="true" />
+            <element signature="e#13500#13501#0" expanded="true" />
             <element signature="method#setModel#0;class#Sales#0" expanded="false" />
-            <element signature="method#getSuggestedModel#0;class#Sales#0" expanded="false" />
+            <element signature="e#18175#18176#0" expanded="true" />
+            <element signature="e#18209#18210#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -646,6 +645,12 @@
             <element signature="imports" expanded="false" />
             <element signature="e#1212#1371#0" expanded="false" />
             <element signature="e#1370#1371#0" expanded="false" />
+            <element signature="e#1529#1698#0" expanded="false" />
+            <element signature="e#1697#1698#0" expanded="false" />
+            <element signature="e#2144#2325#0" expanded="false" />
+            <element signature="e#2324#2325#0" expanded="false" />
+            <element signature="e#3411#4398#0" expanded="false" />
+            <element signature="e#4397#4398#0" expanded="false" />
             <element signature="e#6213#6263#0" expanded="false" />
           </folding>
         </state>
@@ -657,10 +662,10 @@
           <caret line="98" column="30" selection-start-line="98" selection-start-column="30" selection-end-line="98" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3895#6139#0" expanded="true" />
-            <element signature="e#6138#6139#0" expanded="true" />
-            <element signature="method#keyPressed#0;class#10474:12645" expanded="false" />
-            <element signature="method#keyTyped#0;class#10474:12645" expanded="false" />
+            <element signature="method#keyTyped#0;class#7194:9572" expanded="false" />
+            <element signature="method#keyPressed#0;class#7194:9572" expanded="false" />
+            <element signature="method#keyPressed#0;class#10673:12844" expanded="false" />
+            <element signature="method#keyTyped#0;class#10673:12844" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -669,7 +674,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#691#865#0" expanded="false" />
+            <element signature="e#864#865#0" expanded="false" />
+            <element signature="e#908#1077#0" expanded="false" />
+            <element signature="e#1076#1077#0" expanded="false" />
+            <element signature="e#1120#1289#0" expanded="false" />
+            <element signature="e#1288#1289#0" expanded="false" />
+            <element signature="e#1324#1492#0" expanded="false" />
+            <element signature="e#1491#1492#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -678,16 +693,13 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#4015#6043#0" expanded="true" />
-            <element signature="e#6042#6043#0" expanded="true" />
-            <element signature="method#keyTyped#0;class#6840:9109" expanded="false" />
-            <element signature="method#keyTyped#0;class#9568:11941" expanded="false" />
-            <element signature="e#12263#12700#0" expanded="true" />
-            <element signature="e#12699#12700#0" expanded="true" />
-            <element signature="method#keyTyped#0;class#13663:15862" expanded="false" />
-            <element signature="method#keyPressed#0;class#13663:15862" expanded="false" />
+            <element signature="e#3972#6706#0" expanded="true" />
+            <element signature="e#6705#6706#0" expanded="true" />
+            <element signature="e#13023#13501#0" expanded="true" />
+            <element signature="e#13500#13501#0" expanded="true" />
             <element signature="method#setModel#0;class#Sales#0" expanded="false" />
-            <element signature="method#getSuggestedModel#0;class#Sales#0" expanded="false" />
+            <element signature="e#18175#18176#0" expanded="true" />
+            <element signature="e#18209#18210#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -700,6 +712,79 @@
             <element signature="imports" expanded="false" />
             <element signature="e#1212#1371#0" expanded="false" />
             <element signature="e#1370#1371#0" expanded="false" />
+            <element signature="e#1529#1698#0" expanded="false" />
+            <element signature="e#1697#1698#0" expanded="false" />
+            <element signature="e#2144#2325#0" expanded="false" />
+            <element signature="e#2324#2325#0" expanded="false" />
+            <element signature="e#3411#4398#0" expanded="false" />
+            <element signature="e#4397#4398#0" expanded="false" />
+            <element signature="e#6213#6263#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Purchasing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="98" column="30" selection-start-line="98" selection-start-column="30" selection-end-line="98" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#keyTyped#0;class#7194:9572" expanded="false" />
+            <element signature="method#keyPressed#0;class#7194:9572" expanded="false" />
+            <element signature="method#keyPressed#0;class#10673:12844" expanded="false" />
+            <element signature="method#keyTyped#0;class#10673:12844" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#691#865#0" expanded="false" />
+            <element signature="e#864#865#0" expanded="false" />
+            <element signature="e#908#1077#0" expanded="false" />
+            <element signature="e#1076#1077#0" expanded="false" />
+            <element signature="e#1120#1289#0" expanded="false" />
+            <element signature="e#1288#1289#0" expanded="false" />
+            <element signature="e#1324#1492#0" expanded="false" />
+            <element signature="e#1491#1492#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sales.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#3972#6706#0" expanded="true" />
+            <element signature="e#6705#6706#0" expanded="true" />
+            <element signature="e#13023#13501#0" expanded="true" />
+            <element signature="e#13500#13501#0" expanded="true" />
+            <element signature="method#setModel#0;class#Sales#0" expanded="false" />
+            <element signature="e#18175#18176#0" expanded="true" />
+            <element signature="e#18209#18210#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Stock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="71" column="11" selection-start-line="71" selection-start-column="11" selection-end-line="71" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1212#1371#0" expanded="false" />
+            <element signature="e#1370#1371#0" expanded="false" />
+            <element signature="e#1529#1698#0" expanded="false" />
+            <element signature="e#1697#1698#0" expanded="false" />
+            <element signature="e#2144#2325#0" expanded="false" />
+            <element signature="e#2324#2325#0" expanded="false" />
+            <element signature="e#3411#4398#0" expanded="false" />
+            <element signature="e#4397#4398#0" expanded="false" />
             <element signature="e#6213#6263#0" expanded="false" />
           </folding>
         </state>
@@ -711,10 +796,10 @@
           <caret line="120" column="48" selection-start-line="120" selection-start-column="48" selection-end-line="120" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3895#6139#0" expanded="true" />
-            <element signature="e#6138#6139#0" expanded="true" />
-            <element signature="method#keyPressed#0;class#10474:12645" expanded="false" />
-            <element signature="method#keyTyped#0;class#10474:12645" expanded="false" />
+            <element signature="method#keyTyped#0;class#7194:9572" expanded="false" />
+            <element signature="method#keyPressed#0;class#7194:9572" expanded="false" />
+            <element signature="method#keyPressed#0;class#10673:12844" expanded="false" />
+            <element signature="method#keyTyped#0;class#10673:12844" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -724,16 +809,13 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#4015#6043#0" expanded="true" />
-            <element signature="e#6042#6043#0" expanded="true" />
-            <element signature="method#keyTyped#0;class#6840:9109" expanded="false" />
-            <element signature="method#keyTyped#0;class#9568:11941" expanded="false" />
-            <element signature="e#12263#12700#0" expanded="true" />
-            <element signature="e#12699#12700#0" expanded="true" />
-            <element signature="method#keyTyped#0;class#13663:15862" expanded="false" />
-            <element signature="method#keyPressed#0;class#13663:15862" expanded="false" />
+            <element signature="e#3972#6706#0" expanded="true" />
+            <element signature="e#6705#6706#0" expanded="true" />
+            <element signature="e#13023#13501#0" expanded="true" />
+            <element signature="e#13500#13501#0" expanded="true" />
             <element signature="method#setModel#0;class#Sales#0" expanded="false" />
-            <element signature="method#getSuggestedModel#0;class#Sales#0" expanded="false" />
+            <element signature="e#18175#18176#0" expanded="true" />
+            <element signature="e#18209#18210#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -749,7 +831,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#691#865#0" expanded="false" />
+            <element signature="e#864#865#0" expanded="false" />
+            <element signature="e#908#1077#0" expanded="false" />
+            <element signature="e#1076#1077#0" expanded="false" />
+            <element signature="e#1120#1289#0" expanded="false" />
+            <element signature="e#1288#1289#0" expanded="false" />
+            <element signature="e#1324#1492#0" expanded="false" />
+            <element signature="e#1491#1492#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -764,7 +856,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#691#865#0" expanded="false" />
+            <element signature="e#864#865#0" expanded="false" />
+            <element signature="e#908#1077#0" expanded="false" />
+            <element signature="e#1076#1077#0" expanded="false" />
+            <element signature="e#1120#1289#0" expanded="false" />
+            <element signature="e#1288#1289#0" expanded="false" />
+            <element signature="e#1324#1492#0" expanded="false" />
+            <element signature="e#1491#1492#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -776,6 +878,12 @@
             <element signature="imports" expanded="false" />
             <element signature="e#1212#1371#0" expanded="false" />
             <element signature="e#1370#1371#0" expanded="false" />
+            <element signature="e#1529#1698#0" expanded="false" />
+            <element signature="e#1697#1698#0" expanded="false" />
+            <element signature="e#2144#2325#0" expanded="false" />
+            <element signature="e#2324#2325#0" expanded="false" />
+            <element signature="e#3411#4398#0" expanded="false" />
+            <element signature="e#4397#4398#0" expanded="false" />
             <element signature="e#6213#6263#0" expanded="false" />
           </folding>
         </state>
@@ -786,16 +894,13 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="85" column="49" selection-start-line="85" selection-start-column="49" selection-end-line="85" selection-end-column="49" />
           <folding>
-            <element signature="e#4015#6043#0" expanded="true" />
-            <element signature="e#6042#6043#0" expanded="true" />
-            <element signature="method#keyTyped#0;class#6840:9109" expanded="false" />
-            <element signature="method#keyTyped#0;class#9568:11941" expanded="false" />
-            <element signature="e#12263#12700#0" expanded="true" />
-            <element signature="e#12699#12700#0" expanded="true" />
-            <element signature="method#keyTyped#0;class#13663:15862" expanded="false" />
-            <element signature="method#keyPressed#0;class#13663:15862" expanded="false" />
+            <element signature="e#3972#6706#0" expanded="true" />
+            <element signature="e#6705#6706#0" expanded="true" />
+            <element signature="e#13023#13501#0" expanded="true" />
+            <element signature="e#13500#13501#0" expanded="true" />
             <element signature="method#setModel#0;class#Sales#0" expanded="false" />
-            <element signature="method#getSuggestedModel#0;class#Sales#0" expanded="false" />
+            <element signature="e#18175#18176#0" expanded="true" />
+            <element signature="e#18209#18210#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -811,7 +916,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#691#865#0" expanded="false" />
+            <element signature="e#864#865#0" expanded="false" />
+            <element signature="e#908#1077#0" expanded="false" />
+            <element signature="e#1076#1077#0" expanded="false" />
+            <element signature="e#1120#1289#0" expanded="false" />
+            <element signature="e#1288#1289#0" expanded="false" />
+            <element signature="e#1324#1492#0" expanded="false" />
+            <element signature="e#1491#1492#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -823,6 +938,12 @@
             <element signature="imports" expanded="false" />
             <element signature="e#1212#1371#0" expanded="false" />
             <element signature="e#1370#1371#0" expanded="false" />
+            <element signature="e#1529#1698#0" expanded="false" />
+            <element signature="e#1697#1698#0" expanded="false" />
+            <element signature="e#2144#2325#0" expanded="false" />
+            <element signature="e#2324#2325#0" expanded="false" />
+            <element signature="e#3411#4398#0" expanded="false" />
+            <element signature="e#4397#4398#0" expanded="false" />
             <element signature="e#6213#6263#0" expanded="false" />
           </folding>
         </state>
@@ -833,16 +954,13 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="85" column="49" selection-start-line="85" selection-start-column="49" selection-end-line="85" selection-end-column="49" />
           <folding>
-            <element signature="e#4015#6043#0" expanded="true" />
-            <element signature="e#6042#6043#0" expanded="true" />
-            <element signature="method#keyTyped#0;class#6840:9109" expanded="false" />
-            <element signature="method#keyTyped#0;class#9568:11941" expanded="false" />
-            <element signature="e#12263#12700#0" expanded="true" />
-            <element signature="e#12699#12700#0" expanded="true" />
-            <element signature="method#keyTyped#0;class#13663:15862" expanded="false" />
-            <element signature="method#keyPressed#0;class#13663:15862" expanded="false" />
+            <element signature="e#3972#6706#0" expanded="true" />
+            <element signature="e#6705#6706#0" expanded="true" />
+            <element signature="e#13023#13501#0" expanded="true" />
+            <element signature="e#13500#13501#0" expanded="true" />
             <element signature="method#setModel#0;class#Sales#0" expanded="false" />
-            <element signature="method#getSuggestedModel#0;class#Sales#0" expanded="false" />
+            <element signature="e#18175#18176#0" expanded="true" />
+            <element signature="e#18209#18210#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -858,7 +976,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#691#865#0" expanded="false" />
+            <element signature="e#864#865#0" expanded="false" />
+            <element signature="e#908#1077#0" expanded="false" />
+            <element signature="e#1076#1077#0" expanded="false" />
+            <element signature="e#1120#1289#0" expanded="false" />
+            <element signature="e#1288#1289#0" expanded="false" />
+            <element signature="e#1324#1492#0" expanded="false" />
+            <element signature="e#1491#1492#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -870,6 +998,12 @@
             <element signature="imports" expanded="false" />
             <element signature="e#1212#1371#0" expanded="false" />
             <element signature="e#1370#1371#0" expanded="false" />
+            <element signature="e#1529#1698#0" expanded="false" />
+            <element signature="e#1697#1698#0" expanded="false" />
+            <element signature="e#2144#2325#0" expanded="false" />
+            <element signature="e#2324#2325#0" expanded="false" />
+            <element signature="e#3411#4398#0" expanded="false" />
+            <element signature="e#4397#4398#0" expanded="false" />
             <element signature="e#6213#6263#0" expanded="false" />
           </folding>
         </state>
@@ -880,16 +1014,13 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="85" column="49" selection-start-line="85" selection-start-column="49" selection-end-line="85" selection-end-column="49" />
           <folding>
-            <element signature="e#4015#6043#0" expanded="true" />
-            <element signature="e#6042#6043#0" expanded="true" />
-            <element signature="method#keyTyped#0;class#6840:9109" expanded="false" />
-            <element signature="method#keyTyped#0;class#9568:11941" expanded="false" />
-            <element signature="e#12263#12700#0" expanded="true" />
-            <element signature="e#12699#12700#0" expanded="true" />
-            <element signature="method#keyTyped#0;class#13663:15862" expanded="false" />
-            <element signature="method#keyPressed#0;class#13663:15862" expanded="false" />
+            <element signature="e#3972#6706#0" expanded="true" />
+            <element signature="e#6705#6706#0" expanded="true" />
+            <element signature="e#13023#13501#0" expanded="true" />
+            <element signature="e#13500#13501#0" expanded="true" />
             <element signature="method#setModel#0;class#Sales#0" expanded="false" />
-            <element signature="method#getSuggestedModel#0;class#Sales#0" expanded="false" />
+            <element signature="e#18175#18176#0" expanded="true" />
+            <element signature="e#18209#18210#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -905,7 +1036,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="31" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="31" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#691#865#0" expanded="false" />
+            <element signature="e#864#865#0" expanded="false" />
+            <element signature="e#908#1077#0" expanded="false" />
+            <element signature="e#1076#1077#0" expanded="false" />
+            <element signature="e#1120#1289#0" expanded="false" />
+            <element signature="e#1288#1289#0" expanded="false" />
+            <element signature="e#1324#1492#0" expanded="false" />
+            <element signature="e#1491#1492#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -914,16 +1055,13 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
           <folding>
-            <element signature="e#4015#6043#0" expanded="true" />
-            <element signature="e#6042#6043#0" expanded="true" />
-            <element signature="method#keyTyped#0;class#6840:9109" expanded="false" />
-            <element signature="method#keyTyped#0;class#9568:11941" expanded="false" />
-            <element signature="e#12263#12700#0" expanded="true" />
-            <element signature="e#12699#12700#0" expanded="true" />
-            <element signature="method#keyTyped#0;class#13663:15862" expanded="false" />
-            <element signature="method#keyPressed#0;class#13663:15862" expanded="false" />
+            <element signature="e#3972#6706#0" expanded="true" />
+            <element signature="e#6705#6706#0" expanded="true" />
+            <element signature="e#13023#13501#0" expanded="true" />
+            <element signature="e#13500#13501#0" expanded="true" />
             <element signature="method#setModel#0;class#Sales#0" expanded="false" />
-            <element signature="method#getSuggestedModel#0;class#Sales#0" expanded="false" />
+            <element signature="e#18175#18176#0" expanded="true" />
+            <element signature="e#18209#18210#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -932,7 +1070,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="27" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#691#865#0" expanded="false" />
+            <element signature="e#864#865#0" expanded="false" />
+            <element signature="e#908#1077#0" expanded="false" />
+            <element signature="e#1076#1077#0" expanded="false" />
+            <element signature="e#1120#1289#0" expanded="false" />
+            <element signature="e#1288#1289#0" expanded="false" />
+            <element signature="e#1324#1492#0" expanded="false" />
+            <element signature="e#1491#1492#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -940,7 +1088,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="27" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#691#865#0" expanded="false" />
+            <element signature="e#864#865#0" expanded="false" />
+            <element signature="e#908#1077#0" expanded="false" />
+            <element signature="e#1076#1077#0" expanded="false" />
+            <element signature="e#1120#1289#0" expanded="false" />
+            <element signature="e#1288#1289#0" expanded="false" />
+            <element signature="e#1324#1492#0" expanded="false" />
+            <element signature="e#1491#1492#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -948,7 +1106,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="27" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#691#865#0" expanded="false" />
+            <element signature="e#864#865#0" expanded="false" />
+            <element signature="e#908#1077#0" expanded="false" />
+            <element signature="e#1076#1077#0" expanded="false" />
+            <element signature="e#1120#1289#0" expanded="false" />
+            <element signature="e#1288#1289#0" expanded="false" />
+            <element signature="e#1324#1492#0" expanded="false" />
+            <element signature="e#1491#1492#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -956,7 +1124,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="27" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#691#865#0" expanded="false" />
+            <element signature="e#864#865#0" expanded="false" />
+            <element signature="e#908#1077#0" expanded="false" />
+            <element signature="e#1076#1077#0" expanded="false" />
+            <element signature="e#1120#1289#0" expanded="false" />
+            <element signature="e#1288#1289#0" expanded="false" />
+            <element signature="e#1324#1492#0" expanded="false" />
+            <element signature="e#1491#1492#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -964,7 +1142,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="27" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#691#865#0" expanded="false" />
+            <element signature="e#864#865#0" expanded="false" />
+            <element signature="e#908#1077#0" expanded="false" />
+            <element signature="e#1076#1077#0" expanded="false" />
+            <element signature="e#1120#1289#0" expanded="false" />
+            <element signature="e#1288#1289#0" expanded="false" />
+            <element signature="e#1324#1492#0" expanded="false" />
+            <element signature="e#1491#1492#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -972,7 +1160,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#691#865#0" expanded="false" />
+            <element signature="e#864#865#0" expanded="false" />
+            <element signature="e#908#1077#0" expanded="false" />
+            <element signature="e#1076#1077#0" expanded="false" />
+            <element signature="e#1120#1289#0" expanded="false" />
+            <element signature="e#1288#1289#0" expanded="false" />
+            <element signature="e#1324#1492#0" expanded="false" />
+            <element signature="e#1491#1492#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -998,6 +1196,12 @@
             <element signature="imports" expanded="false" />
             <element signature="e#1212#1371#0" expanded="false" />
             <element signature="e#1370#1371#0" expanded="false" />
+            <element signature="e#1529#1698#0" expanded="false" />
+            <element signature="e#1697#1698#0" expanded="false" />
+            <element signature="e#2144#2325#0" expanded="false" />
+            <element signature="e#2324#2325#0" expanded="false" />
+            <element signature="e#3411#4398#0" expanded="false" />
+            <element signature="e#4397#4398#0" expanded="false" />
             <element signature="e#6213#6263#0" expanded="false" />
           </folding>
         </state>
@@ -1006,40 +1210,55 @@
     <entry file="file://$PROJECT_DIR$/src/MainClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding />
+          <caret line="40" column="20" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#691#865#0" expanded="false" />
+            <element signature="e#864#865#0" expanded="false" />
+            <element signature="e#908#1077#0" expanded="false" />
+            <element signature="e#1076#1077#0" expanded="false" />
+            <element signature="e#1120#1289#0" expanded="false" />
+            <element signature="e#1288#1289#0" expanded="false" />
+            <element signature="e#1324#1492#0" expanded="false" />
+            <element signature="e#1491#1492#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Purchasing.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="182" column="0" selection-start-line="182" selection-start-column="0" selection-end-line="182" selection-end-column="0" />
+          <caret line="110" column="29" selection-start-line="110" selection-start-column="29" selection-end-line="110" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3895#6139#0" expanded="true" />
-            <element signature="e#6138#6139#0" expanded="true" />
-            <element signature="method#keyPressed#0;class#10474:12645" expanded="false" />
-            <element signature="method#keyTyped#0;class#10474:12645" expanded="false" />
+            <element signature="method#keyTyped#0;class#7194:9572" expanded="false" />
+            <element signature="method#keyPressed#0;class#7194:9572" expanded="false" />
+            <element signature="method#keyPressed#0;class#10673:12844" expanded="false" />
+            <element signature="method#keyTyped#0;class#10673:12844" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-1.7.0-openjdk-amd64/jre/lib/rt.jar!/java/lang/Object.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19672132">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Sales.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6446281">
-          <caret line="211" column="127" selection-start-line="211" selection-start-column="127" selection-end-line="211" selection-end-column="127" />
+        <state vertical-scroll-proportion="0.5244216">
+          <caret line="175" column="25" selection-start-line="175" selection-start-column="25" selection-end-line="175" selection-end-column="25" />
           <folding>
-            <element signature="e#4015#6043#0" expanded="true" />
-            <element signature="e#6042#6043#0" expanded="true" />
-            <element signature="method#keyTyped#0;class#6840:9109" expanded="false" />
-            <element signature="method#keyTyped#0;class#9568:11941" expanded="false" />
-            <element signature="e#12263#12700#0" expanded="true" />
-            <element signature="e#12699#12700#0" expanded="true" />
-            <element signature="method#keyTyped#0;class#13663:15862" expanded="false" />
-            <element signature="method#keyPressed#0;class#13663:15862" expanded="false" />
+            <element signature="e#3972#6706#0" expanded="true" />
+            <element signature="e#6705#6706#0" expanded="true" />
+            <element signature="e#13023#13501#0" expanded="true" />
+            <element signature="e#13500#13501#0" expanded="true" />
             <element signature="method#setModel#0;class#Sales#0" expanded="false" />
-            <element signature="method#getSuggestedModel#0;class#Sales#0" expanded="false" />
+            <element signature="e#18175#18176#0" expanded="true" />
+            <element signature="e#18209#18210#0" expanded="true" />
           </folding>
         </state>
       </provider>

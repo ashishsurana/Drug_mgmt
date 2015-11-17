@@ -112,13 +112,14 @@ public class Purchasing {
                 }*/
                 try {
                     Connection con = DriverManager.getConnection(url, user, pass);
-                    PreparedStatement preparedStatement = con.prepareStatement("insert into stock.purchase values(?,?,?,?,?,?)");
+                    PreparedStatement preparedStatement = con.prepareStatement("insert into stock.purchase values(?,?,?,?,?,?,?)");
                     preparedStatement.setString(1, String.valueOf(textField_name.getText()));
                     preparedStatement.setString(2, textField_bno.getText());
                     preparedStatement.setInt(3, Integer.parseInt(textField_qty.getText()));
                     preparedStatement.setString(4, textField_party.getText());
                     preparedStatement.setString(5, textField_billdate.getText());
                     preparedStatement.setInt(6, Integer.parseInt(textField_billno.getText()));
+                    preparedStatement.setString(7, textField_expdate.getText());
                     preparedStatement.executeUpdate();
                     con.close();
                 } catch (SQLException e) {
@@ -147,10 +148,11 @@ public class Purchasing {
         try {
             Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/stock", "admin", "password");
             java.sql.Statement statement = con.createStatement();
-            ResultSet resultSet = statement.executeQuery("select * from purchase");
+            ResultSet resultSet = statement.executeQuery("select distinct name from purchase");
             while (resultSet.next()){
                 vector_name.addElement(resultSet.getString("name"));
             }
+            Collections.sort(vector_name);
         }
         catch (SQLException e){
             e.printStackTrace();
@@ -208,18 +210,18 @@ public class Purchasing {
         });//--------------------------KeyListener----------------
         setModel(new DefaultComboBoxModel(vector_name), "", "name");
 //---------------------------------------------------------------------------------------------
-//                                 Suggestion Box PARTY
+//                                 Suggestion Box PARTY NAME
 // ---------------------------------------------------------------------------------------------
         jComboBox_party.setEditable(true);
         textField_party = (JTextField) jComboBox_party.getEditor().getEditorComponent();
         try {
             Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/stock", "admin", "password");
             java.sql.Statement statement = con.createStatement();
-            ResultSet resultSet = statement.executeQuery("select * from purchase");
+            ResultSet resultSet = statement.executeQuery("select distinct party from purchase");
             while (resultSet.next()){
                 vector_party.addElement(resultSet.getString("party"));
-
             }
+            Collections.sort(vector_party);
         }
         catch (SQLException e){
             e.printStackTrace();

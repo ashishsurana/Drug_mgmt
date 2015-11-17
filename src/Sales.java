@@ -73,7 +73,7 @@ public class Sales {
 		JLabel label_pname  = new JLabel("Patient Name");
 		label_pname.setBounds(100,300,200,25);
 		jFrame.add(label_pname);
-		final JTextField textField_pname = new JTextField();
+		final JTextField textField_pname = new JTextField(null);
 		textField_pname.setBounds(250, 300, 200, 25);
 		jFrame.add(textField_pname);
 		JLabel label_date  = new JLabel("Date");
@@ -106,10 +106,10 @@ public class Sales {
 				textField_name.setText(null);
 				textField_bno.setText(null);
 				textField_qty.setText(null);
-                label_qtysuggest.setText(null);
-                textField_billno.setText(null);
-                textField_drname.setText(null);
-                textField_pname.setText(null);
+				label_qtysuggest.setText(null);
+				textField_billno.setText(null);
+				textField_drname.setText(null);
+				textField_pname.setText(null);
 				textField_date.setText(null);
 			}
 		});
@@ -117,46 +117,64 @@ public class Sales {
 		JButton submit = new JButton("Submit");
 		submit.setBounds(250, 450, 100, 25);
 		jFrame.add(submit);
+
 		submit.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent actionEvent) {
-				String url = new String("jdbc:mysql://127.0.0.1:3306/stock");
-				String user = new String("admin");
-				String pass = new String("password");
-				try {
-					Connection con = DriverManager.getConnection(url, user, pass);
-					PreparedStatement preparedStatement = con.prepareStatement("insert into stock.sales values(?,?,?,?,?,?,?)");
-					preparedStatement.setString(1, String.valueOf(textField_name.getText()));
-                    preparedStatement.setString(2, textField_bno.getText());
-					preparedStatement.setInt(3, Integer.parseInt(textField_billno.getText()));
-					preparedStatement.setInt(4, Integer.parseInt(textField_billno.getText()));
-					preparedStatement.setString(5, textField_drname.getText());
-					preparedStatement.setString(6, textField_pname.getText());
-					preparedStatement.setString(7, textField_date.getText());
-					preparedStatement.executeUpdate();
+				if (textField_name.getText().length()==0 ||
+						textField_billno.getText().length()==0 ||
+						textField_bno.getText().length()==0 ||
+						textField_qty.getText().length()==0 ||
+						textField_drname.getText().length()==0 ||
+						textField_pname.getText().length()==0 ||
+						textField_date.getText().length()==0)
+					JOptionPane.showMessageDialog(null,"Entries cannot be blank");
+				else {
+
+					String url = new String("jdbc:mysql://127.0.0.1:3306/stock");
+					String user = new String("admin");
+					String pass = new String("password");
+					try {
+						Connection con = DriverManager.getConnection(url, user, pass);
+						PreparedStatement preparedStatement = con.prepareStatement("insert into stock.sales values(?,?,?,?,?,?,?)");
+						preparedStatement.setString(1, textField_name.getText());
+						preparedStatement.setString(2, textField_bno.getText());
+						preparedStatement.setInt(3, Integer.parseInt(textField_billno.getText()));
+						preparedStatement.setInt(4, Integer.parseInt(textField_billno.getText()));
+						preparedStatement.setString(5, textField_drname.getText());
+						preparedStatement.setString(6, textField_pname.getText());
+						preparedStatement.setString(7, textField_date.getText());
+						preparedStatement.executeUpdate();
 //					System.out.println("Value in Boolean = "+preparedStatement.execut);
 
 //---------------------------------------------Updating Quantity----------------------------------------
-					PreparedStatement preparedStatement1 = con.prepareStatement("update purchase set qty = ? where name = ? and bno = ?");
+						PreparedStatement preparedStatement1 = con.prepareStatement("update purchase set qty = ? where name = ? and bno = ?");
+						if (remaining_qty != 0) {
+							preparedStatement1.setInt(1, remaining_qty);
+						} else if (remaining_qty == 0) {
+							preparedStatement1 = con.prepareStatement("delete from purchase where qty = ? and name = ? and bno = ?");
+							preparedStatement1.setInt(1, Integer.parseInt(textField_qty.getText()));
+							JOptionPane.showMessageDialog(null, "Stock Empty");
+						}
+						preparedStatement1.setString(2, textField_name.getText());
+						preparedStatement1.setString(3, textField_bno.getText());
 
-                    preparedStatement1.setInt(1,remaining_qty);
-                    preparedStatement1.setString(2, textField_name.getText());
-                    preparedStatement1.setString(3, textField_bno.getText());
-                    preparedStatement1.executeUpdate();
-					con.close();
-				} catch (SQLException e) {
-					e.printStackTrace();
-				}
-				textField_name.setText(null);
-				textField_bno.setText(null);
-				textField_qty.setText(null);
-				textField_billno.setText(textField_billno.getText());
-				textField_drname.setText(textField_drname.getText());
-				textField_pname.setText(textField_pname.getText());
-				textField_date.setText(textField_date.getText());
-                label_qtysuggest.setText(null);
 
-			}
+						preparedStatement1.executeUpdate();
+						con.close();
+					} catch (SQLException e) {
+						e.printStackTrace();
+					}
+					textField_name.setText(null);
+					textField_bno.setText(null);
+					textField_qty.setText(null);
+					textField_billno.setText(textField_billno.getText());
+					textField_drname.setText(textField_drname.getText());
+					textField_pname.setText(textField_pname.getText());
+					textField_date.setText(textField_date.getText());
+					label_qtysuggest.setText(null);
+				}//else condition
+			}//action performed
 		});
 
 
@@ -167,10 +185,11 @@ public class Sales {
 		try {
 			Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/stock", "admin", "password");
 			java.sql.Statement statement = con.createStatement();
-			ResultSet resultSet = statement.executeQuery("select name from purchase");
+			ResultSet resultSet = statement.executeQuery("select distinct name from purchase");
 			while (resultSet.next()){
 				vector_name.addElement(resultSet.getString("name"));
 			}
+            Collections.sort(vector_name);
 		}
 		catch (SQLException e2){
 			e2.printStackTrace();
@@ -216,6 +235,7 @@ public class Sales {
 						while (resultSet.next()){
 							vector_bno.addElement(resultSet.getString("bno"));
 						}
+						Collections.sort(vector_bno);
 						con.close();
 					}
 					catch (SQLException e2){
@@ -288,7 +308,7 @@ public class Sales {
 //---------------------------------------------------for qty inside bno----------------------------------------
 					try {
 						Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/stock", "admin", "password");
-						PreparedStatement preparedStatement = con.prepareStatement("select qty from purchase where name = ? and bno = ?");
+						PreparedStatement preparedStatement = con.prepareStatement("select distinct qty from purchase where name = ? and bno = ?");
 						preparedStatement.setString(1, textField_name.getText());
 						preparedStatement.setString(2, text);
 						ResultSet resultSet = preparedStatement.executeQuery();
@@ -335,6 +355,7 @@ public class Sales {
 				if (code == KeyEvent.VK_ENTER || code == KeyEvent.VK_TAB){
                     remaining_qty=(Integer.parseInt(label_qtysuggest.getText()))-Integer.parseInt(textField_qty.getText());
                     if (remaining_qty<0){
+						System.out.println(remaining_qty);
 						JOptionPane.showMessageDialog(null,"Quantity is more then existing stock");
 					}
 				}
@@ -347,7 +368,7 @@ public class Sales {
         try {
             Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/stock", "admin", "password");
             java.sql.Statement statement = con.createStatement();
-            ResultSet resultSet = statement.executeQuery("select * from sales ");//where name = '" + textField_name.getText() + "'");
+            ResultSet resultSet = statement.executeQuery("select distinct drname from sales ");//where name = '" + textField_name.getText() + "'");
             while (resultSet.next()){
                 vector_drname.addElement(resultSet.getString("drname"));
             }
