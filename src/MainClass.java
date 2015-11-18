@@ -58,7 +58,6 @@ public class MainClass {
 
 
 
-
         frame.add(button_purchase);
         frame.add(button_sales);
         frame.add(button_stock);
