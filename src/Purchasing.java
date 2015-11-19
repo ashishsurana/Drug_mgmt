@@ -132,12 +132,11 @@ public class Purchasing {
                     preparedStatement.setDate(7, date1);
                     preparedStatement.executeUpdate();
                     con.close();
-                    textField_name.setText(null);
-                    textField_bno.setText(null);
-                    textField_qty.setText(null);
-//                    textField_party.setText(null);
-//                    textField_billdate.setText(null);
-                    textField_expdate.setText(null);
+//                    textField_name.setText(null);
+//                    textField_bno.setText(null);
+//                    textField_qty.setText(null);
+//                    textField_expdate.setText(null);
+
                 } catch (SQLException e) {
                     JOptionPane.showMessageDialog(null, "Check details once again");
                     e.printStackTrace();

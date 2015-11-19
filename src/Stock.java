@@ -22,12 +22,14 @@ public class Stock {
     final JFrame jFrame = new JFrame();
     JPanel master = new JPanel(new CardLayout());
     CardLayout cardLayout = (CardLayout) master.getLayout();
+    private boolean hide_flag = false;
     SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
     public Stock() {
 
         master.setSize(600, 600);
         master.add(initpanel1(), "P1");
         master.add(initpanel2(),"P2");
+        master.add(initpanel3(),"P3");
         jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         cardLayout.show(master,"P1");
         jFrame.add(master);
@@ -37,7 +39,7 @@ public class Stock {
         jFrame.setVisible(true);
 
     }
-    private boolean hide_flag = false;
+
     private void setModel(DefaultComboBoxModel mdl, String str,String token) {
         if (token.equalsIgnoreCase("name")){
             jComboBox_name.setModel(mdl);
@@ -55,7 +57,6 @@ public class Stock {
     }
     private JScrollPane inittable(){
 
-
         Vector<String> vector2 = new Vector<>();
         vector2.addElement("BATCH No.");
         vector2.addElement("QTY");
@@ -67,7 +68,6 @@ public class Stock {
         DefaultTableModel model = new DefaultTableModel(0,5);
 
         model.setColumnIdentifiers(vector2);
-//        jTable=null;
         jTable.setModel(model);
         jTable.setEnabled(false);
         JScrollPane jScrollPane = new JScrollPane(jTable);
@@ -144,7 +144,8 @@ public class Stock {
         button_getdb.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                cardLayout.next(master);
+//                cardLayout.next(master);
+                cardLayout.show(master,"P2");
             }
         });
         JButton clear = new JButton("Clear");
@@ -162,7 +163,7 @@ public class Stock {
         button_sortexp.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                p1.add(initpanel2());
+                cardLayout.show(master,"P3");
             }
         });
 //========================================================================================
@@ -305,6 +306,71 @@ public class Stock {
 
 
         return p2;
+    }
+    private JPanel initpanel3(){
+        JPanel p3 = new JPanel();
+        p3.setSize(600, 600);
+        p3.setLayout(null);
+
+
+        Vector<String> vector3 = new Vector<>();
+        vector3.addElement("ITEM");
+        vector3.addElement("BATCH No.");
+        vector3.addElement("QTY");
+        vector3.addElement("EXP");
+        vector3.addElement("PARTY");
+        vector3.addElement("BILL No.");
+        vector3.addElement("BILL DATE");
+
+        JTable jTable = new JTable();
+        DefaultTableModel model = new DefaultTableModel(0,7 );
+
+        model.setColumnIdentifiers(vector3);
+//        jTable=null;
+        jTable.setModel(model);
+        jTable.setEnabled(false);
+        JScrollPane jScrollPane = new JScrollPane(jTable);
+        jScrollPane.setBounds(0, 0,600,500);
+
+
+
+        try {
+            Connection connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/stock", "admin", "password");
+            PreparedStatement preparedStatement = connection.prepareStatement("select * from purchase order by expdate ASC");
+            ResultSet resultSet = preparedStatement.executeQuery();
+            java.sql.Date date;
+            while (resultSet.next()){
+                Vector<String> temp = new Vector<>();
+                temp.addElement(resultSet.getString("name"));
+                temp.addElement(resultSet.getString("bno"));
+                temp.addElement(resultSet.getString("qty"));
+                date = new java.sql.Date(resultSet.getDate("expdate").getTime());
+                temp.addElement(String.valueOf(dateFormat.format(date)));
+                temp.addElement(resultSet.getString("party"));
+                temp.addElement(resultSet.getString("billno"));
+                date = new java.sql.Date(resultSet.getDate("expdate").getTime());
+                temp.addElement(String.valueOf(dateFormat.format(date)));
+                model.addRow(temp);
+            }
+        }
+        catch (SQLException e){
+            e.printStackTrace();
+        }
+
+        p3.add(jScrollPane);
+        JButton button_ok = new JButton("Close");
+        button_ok.setBounds(250, 550, 100, 25);
+        button_ok.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                cardLayout.next(master);
+            }
+        });
+        p3.add(button_ok);
+
+
+
+        return p3;
     }
 
     public static void main(String[] args){
