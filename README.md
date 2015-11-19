@@ -1,4 +1,8 @@
 # Drug_mgmt
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0b1eeafb886946569190643979b4c3347829285f
 The following things are required to execute the code successfully
   * Database is mysql
   * user is "admin"
@@ -7,7 +11,10 @@ The following things are required to execute the code successfully
   * database name is "stock"
 
 The Database "stock" contains two tables "purchase" and "sales" 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0b1eeafb886946569190643979b4c3347829285f
 PURCHASE
 +----------+-------------+------+-----+---------+-------+
 | Field    | Type        | Null | Key | Default | Extra |
@@ -33,4 +40,7 @@ SALES
 | pname  | varchar(20) | NO   |     | NULL    |       |
 | date   | varchar(10) | NO   |     | NULL    |       |
 +--------+-------------+------+-----+---------+-------+
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0b1eeafb886946569190643979b4c3347829285f
