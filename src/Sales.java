@@ -7,6 +7,8 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.geom.Ellipse2D;
 import java.sql.*;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Collections;
 import java.util.Vector;
 
@@ -88,7 +90,7 @@ public class Sales {
 // ------------------------------------------------------------------------------------
 //                                       BUTTONS
 //------------------------------------------------------------------------------------
-		JButton cancel = new JButton("Cancel");
+		final JButton cancel = new JButton("Cancel");
 		cancel.setBounds(100, 450, 100, 25);
 		jFrame.add(cancel);
 		cancel.addActionListener(new ActionListener() {
@@ -126,24 +128,24 @@ public class Sales {
 						textField_bno.getText().length()==0 ||
 						textField_qty.getText().length()==0 ||
 						textField_drname.getText().length()==0 ||
-						textField_pname.getText().length()==0 ||
-						textField_date.getText().length()==0)
+						textField_pname.getText().length()==0 )
 					JOptionPane.showMessageDialog(null,"Entries cannot be blank");
 				else {
 
 					String url = new String("jdbc:mysql://127.0.0.1:3306/stock");
 					String user = new String("admin");
 					String pass = new String("password");
+					SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
 					try {
 						Connection con = DriverManager.getConnection(url, user, pass);
 						PreparedStatement preparedStatement = con.prepareStatement("insert into stock.sales values(?,?,?,?,?,?,?)");
 						preparedStatement.setString(1, textField_name.getText());
 						preparedStatement.setString(2, textField_bno.getText());
-						preparedStatement.setInt(3, Integer.parseInt(textField_billno.getText()));
+						preparedStatement.setInt(3, Integer.parseInt(textField_qty.getText()));
 						preparedStatement.setInt(4, Integer.parseInt(textField_billno.getText()));
 						preparedStatement.setString(5, textField_drname.getText());
 						preparedStatement.setString(6, textField_pname.getText());
-						preparedStatement.setString(7, textField_date.getText());
+						preparedStatement.setDate(7, new Date(dateFormat.parse(textField_date.getText()).getTime()));
 						preparedStatement.executeUpdate();
 //					System.out.println("Value in Boolean = "+preparedStatement.execut);
 
@@ -162,17 +164,21 @@ public class Sales {
 
 						preparedStatement1.executeUpdate();
 						con.close();
+						textField_name.setText(null);
+						textField_bno.setText(null);
+						textField_qty.setText(null);
+						textField_billno.setText(textField_billno.getText());
+						textField_drname.setText(textField_drname.getText());
+						textField_pname.setText(textField_pname.getText());
+						textField_date.setText(textField_date.getText());
+						label_qtysuggest.setText(null);
 					} catch (SQLException e) {
 						e.printStackTrace();
+					} catch (ParseException e){
+//						e.printStackTrace();
+						JOptionPane.showMessageDialog(null,"Check date once again");
 					}
-					textField_name.setText(null);
-					textField_bno.setText(null);
-					textField_qty.setText(null);
-					textField_billno.setText(textField_billno.getText());
-					textField_drname.setText(textField_drname.getText());
-					textField_pname.setText(textField_pname.getText());
-					textField_date.setText(textField_date.getText());
-					label_qtysuggest.setText(null);
+
 				}//else condition
 			}//action performed
 		});

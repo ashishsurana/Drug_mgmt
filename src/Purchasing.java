@@ -5,6 +5,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.sql.*;
+import java.sql.Date;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -26,9 +27,9 @@ public class Purchasing {
 //    final JTextField textField_party;// = new JTextField();
     JLabel label_billno = new JLabel("Bill No");
     final JTextField textField_billno = new JTextField();
-    JLabel label_billdate = new JLabel("Bill Date");
-    final JTextField textField_billdate = new JTextField();
-    JLabel label_expdate = new JLabel("Expiry Date");
+    JLabel label_billdate = new JLabel("Bill Date ");
+    final JTextField textField_billdate = new JTextField("dd-MM-yyyy");
+    JLabel label_expdate = new JLabel("Expiry Date ");
     final JTextField textField_expdate = new JTextField("dd-MM-yyyy");
 
     private JTextField textField_name;
@@ -69,7 +70,7 @@ public class Purchasing {
         jFrame.add(label_expdate);
         textField_expdate.setBounds(250, 340, 200, 25);
         jFrame.add(textField_expdate);
-        JButton cancel = new JButton("Cancel");
+        final JButton cancel = new JButton("Cancel");
         cancel.setBounds(100, 450, 100, 25);
         jFrame.add(cancel);
         cancel.addActionListener(new ActionListener() {
@@ -90,6 +91,7 @@ public class Purchasing {
                 textField_party.setText(null);
                 textField_billdate.setText(null);
                 textField_billno.setText(null);
+                textField_expdate.setText(null);
             }
         });
 
@@ -99,44 +101,54 @@ public class Purchasing {
         submit.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
+                if (textField_name.getText().length()==0 ||
+                        textField_billno.getText().length()==0 ||
+                        textField_bno.getText().length()==0 ||
+                        textField_qty.getText().length()==0 ||
+                        textField_party.getText().length()==0 ||
+                        textField_billdate.getText().length()==0||
+                        textField_expdate.getText().length()==0 )
+                    JOptionPane.showMessageDialog(null,"Entries cannot be blank");
+
                 String url = new String("jdbc:mysql://127.0.0.1:3306/stock");
                 String user = new String("admin");
                 String pass = new String("password");
-                /*java.util.Date date = null;
+
                 SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
+                Date date1;// = new Date(dateFormat.parse(textField_expdate.getText()))
+
                 try {
-                    date=dateFormat.parse(textField_expdate.getText());
-                }
-                catch (ParseException e){
-                    e.printStackTrace();
-                }*/
-                try {
+
                     Connection con = DriverManager.getConnection(url, user, pass);
                     PreparedStatement preparedStatement = con.prepareStatement("insert into stock.purchase values(?,?,?,?,?,?,?)");
                     preparedStatement.setString(1, String.valueOf(textField_name.getText()));
                     preparedStatement.setString(2, textField_bno.getText());
                     preparedStatement.setInt(3, Integer.parseInt(textField_qty.getText()));
                     preparedStatement.setString(4, textField_party.getText());
-                    preparedStatement.setString(5, textField_billdate.getText());
+                    date1 = new Date (dateFormat.parse(textField_billdate.getText()).getTime());
+                    preparedStatement.setDate(5, date1);
                     preparedStatement.setInt(6, Integer.parseInt(textField_billno.getText()));
-                    preparedStatement.setString(7, textField_expdate.getText());
+                    date1 = new Date (dateFormat.parse(textField_expdate.getText()).getTime());
+                    preparedStatement.setDate(7, date1);
                     preparedStatement.executeUpdate();
                     con.close();
+                    textField_name.setText(null);
+                    textField_bno.setText(null);
+                    textField_qty.setText(null);
+//                    textField_party.setText(null);
+//                    textField_billdate.setText(null);
+                    textField_expdate.setText(null);
                 } catch (SQLException e) {
+                    JOptionPane.showMessageDialog(null, "Check details once again");
                     e.printStackTrace();
-                    System.out.println(e.getErrorCode());
-//                    if (e.getErrorCode()==1366){
-//                        JOptionPane.showMessageDialog(null, "Response Failed! Check the datails again");
-//                    }
-
+                }catch (ParseException e){
+                    e.printStackTrace();
+                    JOptionPane.showMessageDialog(null, "Check date once again");
                 }
-                textField_name.setText(null);
-                textField_bno.setText(null);
-                textField_qty.setText(null);
-                textField_party.setText(textField_party.getText());
-                textField_billdate.setText(textField_billdate.getText());
-                textField_billno.setText(textField_billno.getText());
-                textField_expdate.setText(null);
+                catch (NumberFormatException e){
+                    JOptionPane.showMessageDialog(null, "Invalid Bill number");
+                }
+
 
             }
         });
@@ -156,6 +168,7 @@ public class Purchasing {
         }
         catch (SQLException e){
             e.printStackTrace();
+            System.out.println("Exception Caught inside fetching of name");
         }
         textField_name.addKeyListener(new KeyAdapter() {
 
